@@ -1,0 +1,5 @@
+<mat-toolbar color="primary">
+  <span>Third Line</span>
+  <span class="example-spacer"></span>
+  <div *ngFor="let item of items" matTooltip="{{item.name}}" matTooltipPosition="below"><button (click)="item.action()"><mat-icon  class="example-icon">{{item.name}}</mat-icon></button></div>
+</mat-toolbar>
